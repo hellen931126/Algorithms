@@ -15,12 +15,18 @@ class Stack(object):
             return self.items.pop()
 
     def clear(self):
+        '''
+        清空堆栈
+        '''
         del self.items[:]
 
     def is_empty(self):
         return self.size() == 0
 
     def top(self):
+        '''
+        返回栈顶元素
+        '''
         return self.items[self.size()-1]
 
     def show(self):
